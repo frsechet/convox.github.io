@@ -111,7 +111,7 @@ web:
   </tr>
   <tr>
     <td><code>path</code></td>
-    <td>The endpoint the load balancer will use to determine the application's health.</td>
+    <td>The endpoint the load balancer will use to determine the application's health. If you define a `convox.health.path` label, the heath check will automatically become HTTP.</td>
   </tr>
   <tr>
     <td><code>port</code></td>
