@@ -93,6 +93,8 @@ services:
     image: ubuntu:16.04
     init: true
     port: 3000
+    links:
+      - api
     resources:
       - database
     scale:
@@ -204,6 +206,10 @@ Your rack must have the `Internal` param set to Yes to deploy internal services.
 ```shell
 $ convox rack params set Internal=Yes
 ```
+
+### links
+
+Define a link to another service. For more information about linking, read [this section](https://convox.com/docs/gen1/linking/) in the Generation 1 documentation.
 
 ### port
 
